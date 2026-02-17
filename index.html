@@ -523,7 +523,7 @@ body::after{
     <span class="hero-title-jp">日英旅遊語言</span>
     <span class="hero-title-en">Travel Language Guide</span>
   </h1>
-  <p class="hero-sub">精選觀光常用詞彙 · 一鍵發音學習 · 日語0.85× 英語1.25× 語速優化</p>
+  <p class="hero-sub">精選觀光常用詞彙 · 一鍵發音學習 · 日語 0.85×  英語 1.0× 語速優化</p>
   <div class="search-wrap">
     <input type="text" class="search-input" id="searchInput" placeholder="搜尋詞彙 / ローマ字 / Search phrases..." autocomplete="off">
     <span class="search-icon">🔍</span>
@@ -589,7 +589,7 @@ body::after{
 <!-- FOOTER -->
 <footer class="site-footer">
   <div class="footer-brand">旅語</div>
-  <div class="footer-info">日語 0.85× · 英語 1.25× · Web Speech API · Tap card for full detail</div>
+  <div class="footer-info">日語 0.85× · 英語 1.0× · Web Speech API · Tap card for full detail</div>
 </footer>
 
 <script>
@@ -915,7 +915,7 @@ function speak(text, lang, btn) {
 
   const u = new SpeechSynthesisUtterance(text);
   u.lang  = lang;
-  u.rate  = lang === 'ja-JP' ? 0.85 : 1.25;
+  u.rate  = lang === 'ja-JP' ? 0.85 : 1.0;
   u.pitch = 1.05;
 
   btn.classList.add('playing');
